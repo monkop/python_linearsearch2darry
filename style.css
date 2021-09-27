@@ -1,0 +1,75 @@
+.bg
+{
+    background-color: rgb(241, 241, 241);
+}
+.head
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pera
+{
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto;
+    
+}
+.box{
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 500px;
+    height: auto;
+    /* top: 50%;
+    left: 70%;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -250px; */
+    background-color: lightgrey;
+    border: 1px solid gray;
+  
+}
+@media screen and (max-width: 800px) {
+    .box, .pera, .head {
+      width: 100%; 
+}
+}
+/* ---------------------footer section--------------------- */
+.footer{
+    margin-top: 50px;
+    background: linear-gradient(45deg,#e4f1ff, #e2efff);
+    color: rgb(3, 3, 3);
+}
+.footer p a i{
+    position: relative;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:12px 12px;
+    border-radius: 2px;
+    background: #fff;
+    color: #000;
+    border: 0.5px solid #fff;
+}
+
+
+.copyright{
+    margin-bottom:-80px ;
+    text-align: center;
+    /* font-size: 30px; */
+    padding-bottom: 20px;
+}
+
+.footer hr{
+    margin-top:10px ;
+    background: #ccc;
+}
+
+
+
+

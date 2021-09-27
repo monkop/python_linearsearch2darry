@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Python Programming </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="fav.png">
+    </head>
+
+    <body>
+<div class="bg">
+        <h2 class="head">Write a python program to perform linerSearch And binary search on two dimensional (2D) array.</h2>
+        <hr>
+        <p class="pera"> Perform linerSearch And binary search on the middle column 
+            till only two elements are left or till the
+            middle element of some row in the search is
+            the required element 'x'. This search is done
+            to skip the rows that are not required
+          The two left elements must be adjacent. Consider
+            the rows of two elements and do following
+           check whether the element 'x' equals to the 
+               middle element of any one of the 2 rows
+           otherwise according to the value of the 
+               element 'x' check whether it is present in 
+               the 1st half of 1st row, 2nd half of 1st row, 
+               1st half of 2nd row or 2nd half of 2nd row. 
+               </p>
+               <br>
+        <div class="box">
+            <h3>code of linerSearch And binary search on two dimensional (2D) array in python</h3>
+            <br>
+            def linerSearch(arr, matrix, row, col, key):
+            <br>
+            pos = -1
+            <br>
+            flag = 0
+            <br>
+            for i in range(row):
+            <br>
+                for j in range(col):
+                <br>
+                    if(matrix[i][j] == key):
+                    <br>
+                        flag = 1
+                        <br>
+                        pos = i, j
+                        <br>
+                        break
+                        <br>
+            if flag == 1:
+            <br>
+                return flag, pos
+                <br>
+            else:
+            <br>
+                return flag, pos
+                <br>
+                
+                if flag == 1:
+                <br>
+                    return flag, pos
+                    <br>
+                else:
+                <br>
+                    return flag, pos
+                    <br>
+        
+        
+        matrix = []
+        <br>
+        row = int(input("Enter Size of row : "))
+        <br>
+        col = int(input("Enter Size of columns : "))
+        <br>
+        
+        for i in range(row):
+        <br>
+            arr = []
+            <br>
+            for j in range(col):
+            <br>
+                arr.append(int(input()))
+                <br>
+            matrix.append(arr)
+            <br>
+        
+        for i in range(row):
+        <br>
+            for j in range(col):
+            <br>
+                print(matrix[i][j], end=" ")
+                <br>
+            print()
+            <br>
+        
+        key = int(input("Enter number for Search : "))
+        <br>
+        flag, pos = linerSearch(arr, matrix, row, col, key)
+        <br>
+        if flag == 1:
+        <br>
+            print(" Value is find ")
+            <br>
+        else:
+        <br>
+            print(" Value is not found ")
+            <br>
+        </div>
+        <h3><a href="#"></a>Code Link</a></h3>
+        <h3 class="">Output : </h3>
+        <div class="box">
+            Enter Size of row : 3<br>
+Enter Size of columns : 3<br>
+1<br>
+2<br>
+3<br>
+<br>
+4<br>
+5<br>
+6<br>
+<br>
+7<br>
+8<br>
+9<br>
+<br>
+1 2 3 <br>
+4 5 6<br>
+7 8 9<br>
+        </div>
+    </div>
+           <section class="footer"> 
+    
+        <div class=" text-center">
+        <div class="row">
+            
+            <div class="col-md-3">
+                <h1>Follow On</h1>
+                <p><i class="fa fa-facebook-official"></i> <a href="#"></a>Facebook</a></p>
+                <p><i class="fa fa-youtube-play"></i><a href="www.youtude.com/c/monkop">Youtube</a></p>
+                <p><i class="fa fa-twitter"></i><a href="www.github.com/monkop">Github </a></p>
+                <p><i class="fa fa-twitter"></i><a href="https://monkop.github.io/boruto/">See Movie Download Website </a></p>
+                <p><i class="fa fa-twitter"></i><a href="https://textop.herokuapp.com/">See TextUtilites website </a></p>
+            </div>
+           
+        </section> 
+        <h2 class="head"> design by MonkOp</h2>
+        </body>
+
+</html>
